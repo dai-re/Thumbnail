@@ -15,7 +15,9 @@
 	--dot-color : rgba(0,0,0,0.582);
 }
 
-
+* {
+	font-family: Arial;
+}
 body {
 	background-color: #fff;
 	display: flex;

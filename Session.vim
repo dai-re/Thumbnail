@@ -14,7 +14,8 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 main.css
+badd +0 main.css
+badd +9 README.md
 badd +6 index.html
 badd +1 majn.js
 badd +9 main.js
@@ -34,12 +35,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 56 - ((25 * winheight(0) + 16) / 33)
+let s:l = 19 - ((18 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 56
-normal! 0
+keepjumps 19
+normal! 026|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
