@@ -1,0 +1,112 @@
+
+	
+/* 
+ *   made by dai re 
+ *   5 9 22
+ *   facebook @deiterada
+ *
+ *
+ * */
+
+
+
+
+:ROOT {
+	--dot-color : rgba(0,0,0,0.582);
+}
+
+
+body {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+
+}
+.mainBlox {
+	width: 90%;
+	height: 200px;
+	background-color: #ffffff;
+	position: relative;
+	overflow: hidden;
+}
+.tubImage {
+	position: absolute;
+	width: 100%;
+	opacity: 0.4;
+}
+.circleUp {
+	min-width: 70px;
+	height: 25px;
+	border-radius: 0px 50px 50px 0px;
+	position: absolute;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left: 5px;
+
+	background-color: var(--dot-color);
+}
+.circleDown {
+	width: 35px;
+	height: 40px;
+	border-radius: 50px 0px 0px 50px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-left: 7px;
+	display: flex;
+	align-items: center;
+	transition-duration: 1s;
+
+	background-color: var(--dot-color);
+}
+.iUp > svg{
+	color: #fff;
+}
+.viewCount > span{
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+.iDown > svg{
+	color: #fff;
+}
+.scount{
+	font-weight: 600;
+	color: #fff;
+	visibility: hidden;
+	padding-left: 5px;
+	transition-duration: 1s;
+}
+
+
+@media only screen and (min-width:500px){
+.mainBlox {
+	width: 320px;
+	height: 200px;
+	background-color: #ffffff;
+	position: relative;
+	
+}
+}
+
+
+.bactive{
+	width: 60px;
+	padding-left: 10px;
+}
+.iactive{
+	justify-content: start;
+}
+.sactive{
+	visibility: visible;
+	color: #fff;
+}
